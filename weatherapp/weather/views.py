@@ -1,10 +1,12 @@
 import os
 import requests
 from django.shortcuts import render
+from dotenv import load_dotenv
 
 from weather.forms import CityForm
 from weather.models import City
 
+load_dotenv()
 
 def index(request):
     appid = os.getenv('appid')
