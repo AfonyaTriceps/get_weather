@@ -1,3 +1,4 @@
+import os
 import requests
 from django.shortcuts import render
 
@@ -6,7 +7,7 @@ from weather.models import City
 
 
 def index(request):
-    appid = '70848845e1badc9140b40c0bc0596a24'
+    appid = os.getenv('appid')
     url = (
             'https://api.openweathermap.org/data/2.5/weather'
             '?q={}&units=metric&appid=' + appid

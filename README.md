@@ -40,7 +40,9 @@ python manage.py runserver
 ```
 
 Создайте файл `.env` в корневой директории проекта и заполните 
-переменные окружения для подключения к базе PostgreSQL в нем:
+переменные окружения для подключения к базе PostgreSQL в нем.
+Пример заполнения:
+* appid=13524tefdh34534
 * DB_ENGINE=django.db.backends.postgresql
 * DB_NAME=cities
 * POSTGRES_USER=postgres
